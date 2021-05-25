@@ -1,17 +1,15 @@
 
 import React from 'react';
-import './App.css';
+import './index.css';
+import  CartItem from './CartItem';
 
 function App() {
-  const bey = "there";
-  const isloggedin = true;
   return (
-    <div>
-      {isloggedin ? null : <h1>hi</h1> }
-      <p>{ isloggedin ? bey : 'heya'}</p>
-    </div>
+  <div className = "App">
+    <h1>cart</h1>
+    <CartItem/>
+  </div>
       
-    
   );
 }
 
